@@ -4,5 +4,6 @@ import About from './About';
 import Hero from './Hero';
 import How from './How';
 import Faq from './Faq';
+import Button from './Button';
 
-export { Header, Navbar, About, Hero, How, Faq };
+export { Header, Navbar, About, Hero, How, Faq, Button };
