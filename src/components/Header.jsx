@@ -16,10 +16,11 @@ const Header = () => {
 				{navLinks.map((link, index) => (
 					<li
 						key={link.id}
-						className={`text-[18px] cursor-pointer ${
-							index === navLinks.length - 1 ? 'mr-[260px]' : 'mr-[85px]'
+						className={`text-[18px] cursor-pointer text-lg md:text-base lg:text-lg font-medium group ${
+							index === navLinks.length - 1 ? 'mr-10' : 'mr-[85px]'
 						}`}>
 						<a href={`#${link.id}`}>{link.title}</a>
+						<div className='h-0.5 bg-yellow-500 scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out'></div>
 					</li>
 				))}
 			</ul>
