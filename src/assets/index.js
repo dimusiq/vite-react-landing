@@ -7,5 +7,7 @@ import how from './how.png';
 import how2 from './how2.png';
 import how3 from './how3.png';
 import how4 from './how4.png';
+import menu from './menu.svg';
+import close from './close.svg';
 
-export { logo, about, hero, hero2, hero3, how, how2, how3, how4 };
+export { logo, about, hero, hero2, hero3, how, how2, how3, how4, close, menu };
