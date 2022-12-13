@@ -8,8 +8,10 @@ function App() {
 			<div className='flex justify-center items-center'>
 				<div className={`${styles.boxWidth}`}>
 					<Header />
-					
 				</div>
+			</div>
+			<div className={`${styles.sectionWidth}`}>
+				<Hero />
 			</div>
 		</div>
 	);

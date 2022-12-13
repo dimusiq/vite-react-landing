@@ -6,5 +6,6 @@ import How from './How';
 import Faq from './Faq';
 import Button from './Button';
 import Search from './Search';
+import Slider from './Slider';
 
-export { Header, Navbar, About, Hero, How, Faq, Button, Search };
+export { Header, Navbar, About, Hero, How, Faq, Button, Search, Slider };

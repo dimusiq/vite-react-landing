@@ -10,4 +10,22 @@ import how4 from './how4.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
-export { logo, about, hero, hero2, hero3, how, how2, how3, how4, close, menu };
+export { logo, about, how, how2, how3, how4, close, menu };
+
+export const sliderData = [
+	{
+		id: 1,
+		title: 'hero',
+		image: hero,
+	},
+	{
+		id: 2,
+		title: 'hero2',
+		image: hero2,
+	},
+	{
+		id: 3,
+		title: 'hero3',
+		image: hero3,
+	},
+];

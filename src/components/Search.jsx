@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Search = () => {
+const Search = ({ active, setActive }) => {
 	return (
-		<div className='relative text-[16px] '>
+		<div
+			className={`${active ? 'hidden' : 'relative text-[16px] '}`}>
 			<form action='' className=''>
 				<div className=' flex items-center space-x-4 px-6 mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-24 transform duration-500 transition-all'>
 					<div className='flex bg-gray-200 p-2 w-full space-x-2 rounded-lg items-center'>

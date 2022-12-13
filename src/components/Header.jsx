@@ -5,11 +5,11 @@ import Search from './Search';
 
 const Header = () => {
 	const [toggle, setToggle] = useState(false);
-	const [search, setSearch] = useState(false);
+	const [searchActive, setSearchActive] = useState(true);
 
 	return (
-		<header className='w-full min-h-screen text-gray-900'>
-			<nav className='flex justify-between items-center py-8 px-6 mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-24'>
+		<header className='w-full text-gray-900'>
+			<nav className='flex justify-between items-center py-2 px-6 mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-24 border-b rounded-3xl shadow-md'>
 				<button
 					className='block md:hidden relative z-30 focus:outline-none transform  -translate-x-1/2 -translate-y-1/2 active:scale-75 transition-transform'
 					onClick={() => setToggle((prev) => !prev)}>
@@ -45,7 +45,7 @@ const Header = () => {
 				<div
 					className={`${
 						toggle ? 'fixed' : 'hidden'
-					}  flex inset-0 transition-all bg-white/70 backdrop-blur-xl z-20 md:static md:bg-transparent md:flex items-center justify-center space-y-8 md:space-y-0 flex-col md:flex-row md:space-x-8 -mt-56 md:mt-0'`}>
+					}  flex inset-0 transition-all bg-white/70 backdrop-blur-xl z-20 md:static md:bg-transparent md:flex items-center justify-center space-y-8 md:space-y-0 flex-col md:flex-row md:space-x-8 -mt-5 md:mt-0'`}>
 					<ul className='flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 lg:md:-x-8'>
 						{navLinks.map((link, id) => (
 							<li
@@ -59,7 +59,7 @@ const Header = () => {
 				</div>
 				<button
 					className='flex justify-center items-center h-12 px-5 font-medium text-gray-100 bg-yellow-500 whitespace-nowrap hover:bg-yellow-600 hover:text-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500 focus:outline-none'
->
+					onClick={() => setSearchActive((prev) => !prev)}>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='h-5 w-5'
@@ -73,7 +73,7 @@ const Header = () => {
 					</svg>
 				</button>
 			</nav>
-			<Search />
+			<Search active={searchActive} setActive={setSearchActive} />
 		</header>
 	);
 };
