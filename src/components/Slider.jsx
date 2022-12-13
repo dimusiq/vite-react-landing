@@ -1,13 +1,30 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { sliderData } from '../assets/index';
 import styles from '../styles';
 
 const Slider = () => {
 	const [slideIndex, setSlideIndex] = useState(1);
 
+	//
+	const nextSlide = () => {
+		if (slideIndex !== sliderData.length) {
+			setSlideIndex(slideIndex + 1);
+		} else if (slideIndex === sliderData.length) {
+			setSlideIndex(+1);
+		}
+	};
+
 	const moveDot = (index) => {
 		setSlideIndex(index);
 	};
+
+	//делаем бесконечную прокрутку слайдов
+	useEffect(() => {
+		const interval = setInterval(() => {
+			nextSlide();
+		}, 3000);
+		return () => clearInterval(interval);
+	});
 
 	return (
 		<div className={`${styles.sectionWidth} relative w-full overflow-hidden`}>
@@ -24,15 +41,16 @@ const Slider = () => {
 					</div>
 				);
 			})}
-			<div className='flex  translate-x-7 '>
-				{Array.from({ length: 3 }).map((item, index) => (
+			<div className='flex w-full justify-center items-center absolute bottom-0  mb-[30px] '>
+				{Array.from({ length: 3 }).map((data, index) => (
 					<div
+						key={index}
 						onClick={() => moveDot(index + 1)}
-						className={
+						className={`${
 							slideIndex === index + 1
-								? 'w-10 h-10 rounded-full  bg-indigo-500 cursor-pointer '
-								: 'w-5 h-5 rounded-full  bg-black cursor-pointer'
-						}></div>
+								? 'w-[15px] h-[15px] mr-[20px] rounded-full  bg-white cursor-pointer '
+								: 'w-[15px] h-[15px] mr-[20px] rounded-full  bg-gray-400 cursor-pointer'
+						} `}></div>
 				))}
 			</div>
 		</div>
