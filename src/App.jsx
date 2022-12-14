@@ -10,7 +10,7 @@ function App() {
 					<Header />
 				</div>
 			</div>
-			<div className={`${styles.sectionWidth}`}>
+			<div className={`${styles.boxWidth}`}>
 				<Hero />
 			</div>
 		</div>

@@ -1,5 +1,7 @@
 const styles = {
 	boxWidth: 'xl:max-w-[1920px] w-full',
-	sectionWidth: 'xl:max-w-[1770px] w-full',
+
+	buttonStyles:
+		'flex justify-center items-center h-12 px-5 font-medium text-gray-100 bg-yellow-500 whitespace-nowrap hover:bg-yellow-600 hover:text-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500 focus:outline-none',
 };
 export default styles;
