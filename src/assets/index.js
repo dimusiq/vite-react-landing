@@ -9,8 +9,10 @@ import how3 from './how3.png';
 import how4 from './how4.png';
 import menu from './menu.svg';
 import close from './close.svg';
+import cube from './cube.svg';
+import gearwheel from './gearwheel.svg';
 
-export { logo, about, how, how2, how3, how4, close, menu };
+export { logo, about, how, how2, how3, how4, close, menu, cube, gearwheel };
 
 export const sliderData = [
 	{
