@@ -27,21 +27,26 @@ const Slider = () => {
 	});
 
 	return (
-		<div className={`${styles.sectionWidth} relative w-full overflow-hidden`}>
+		<div
+			className={`${styles.sectionWidth} relative w-full md:h-full overflow-hidden `}>    
 			{sliderData.map((data, index) => {
 				return (
 					<div
 						key={data.id}
-						className={
+						className={`	${
 							slideIndex === index + 1
 								? 'opacity-1'
-								: 'w-full h-full absolute opacity-0 transition-opacity ease-in-out'
-						}>
-						<img src={data.image} alt={data.title} />
+								: 'md:h-full absolute opacity-0 transition-opacity ease-in-out'
+						} object-cover `}>
+						<img
+							src={data.image}
+							alt={data.title}
+							className='h-[668px] object-cover rounded-xl'
+						/>
 					</div>
 				);
 			})}
-			<div className='flex w-full justify-center items-center absolute bottom-0  mb-[30px] '>
+			<div className='flex w-full justify-center mb-[30px] items-center absolute bottom-0 object-contain'>
 				{Array.from({ length: 3 }).map((data, index) => (
 					<div
 						key={index}
