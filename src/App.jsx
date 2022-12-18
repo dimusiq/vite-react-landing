@@ -1,6 +1,6 @@
 import styles from './styles';
 
-import { Header, Navbar, About, Hero, How, Faq, Search } from './components';
+import { Header, Navbar, About, Hero, Tabs, Faq, Search } from './components';
 
 function App() {
 	return (
@@ -13,6 +13,7 @@ function App() {
 			</div>
 			<div className='h-full'>
 				<About />
+				<Tabs />
 			</div>
 		</div>
 	);

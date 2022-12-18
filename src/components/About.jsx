@@ -33,18 +33,18 @@ const About = () => {
 						alt='about'
 						className='w-full h-full z-0 object-cover'
 					/>
-					<div className='absolute bottom-0 w-full h-[30%] z-10 text-[16px] backdrop-opacity-10 backdrop-invert bg-black/30 rounded-2xl object-cover'>
-						<dir className='flex items-center align-middle'>
-							<span className=''>
+					<div className='absolute bottom-0 w-full h-[30%] z-10 text-[16px] backdrop-opacity-10 backdrop-invert bg-black/30 rounded-3xl object-cover flex justify-between items-center'>
+						<div className='flex px-[50px]'>
+							<p className={`${styles.paragraph}`}>
 								Принимая во внимание показатели успешности, перспективное
-								планирование способствует подготовке и реализации новых
+								планирование способствует  подготовке и реализации новых
 								принципов
-							</span>
+							</p>
 							<Button
-								className={`${styles.buttonStyles} backdrop-opacity-10 backdrop-invert bg-black/30 border`}>
+								className={`${styles.buttonStyles} border-yellow-600 backdrop-opacity-10 backdrop-invert bg-black/20 border-[3px]`}>
 								Подробнее
 							</Button>
-						</dir>
+						</div>
 					</div>
 				</div>
 				<div className='flex bg-white row-start-2 row-end-2 col-start-3 col-end-3 border-2 rounded-2xl items-center '>
