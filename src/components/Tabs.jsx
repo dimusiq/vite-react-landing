@@ -6,7 +6,7 @@ import Button from './Button';
 
 const Tabs = () => {
 	const [currentTab, setCurrentTab] = useState('1');
-	console.log(currentTab);
+
 	const handleTabClick = (e) => {
 		setCurrentTab(e.target.id);
 	};
@@ -29,10 +29,9 @@ const Tabs = () => {
 
 			<div className='content'>
 				{tabs.map((tab, i) => (
-					<div className='relative '>
+					<div key={i} className='relative '>
 						{currentTab === `${tab.id}` && (
 							<div
-								key={i}
 								className=' flex flex-col-reverse md:flex-row  gap-12 '>
 								<div className='flex flex-1 flex-col items-center md:items-start'>
 									<h4 className='text-[24px] font-bold leading-8 text-center md:text-left '>

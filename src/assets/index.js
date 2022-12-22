@@ -11,8 +11,20 @@ import menu from './menu.svg';
 import close from './close.svg';
 import cube from './cube.svg';
 import gearwheel from './gearwheel.svg';
-
-export { logo, about, how, how2, how3, how4, close, menu, cube, gearwheel };
+import search from './gearwheel.svg';
+export {
+	logo,
+	about,
+	how,
+	how2,
+	how3,
+	how4,
+	close,
+	menu,
+	cube,
+	gearwheel,
+	search,
+};
 
 export const sliderData = [
 	{

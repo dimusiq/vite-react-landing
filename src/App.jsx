@@ -14,6 +14,7 @@ function App() {
 			<div className='h-full'>
 				<About />
 				<Tabs />
+				<Faq />
 			</div>
 		</div>
 	);

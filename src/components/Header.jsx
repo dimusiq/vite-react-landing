@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { navLinks } from '../constants';
-import { menu, close, logo } from '../assets';
+import { menu, close, logo, search } from '../assets';
 import Search from './Search';
 
 const Header = () => {
@@ -14,17 +14,10 @@ const Header = () => {
 					className='block md:hidden relative z-30 focus:outline-none transform  -translate-x-1/2 -translate-y-1/2 active:scale-75 transition-transform'
 					onClick={() => setToggle((prev) => !prev)}>
 					{toggle ? (
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
+						<img
+							src={search}
 							className='h-5 w-5 transform transition duration-500 ease-in-out'
-							viewBox='0 0 20 20'
-							fill='currentColor'>
-							<path
-								fillRule='evenodd'
-								d='M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-								clipRule='evenodd'
-							/>
-						</svg>
+						/>
 					) : (
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
