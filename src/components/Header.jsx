@@ -45,7 +45,7 @@ const Header = () => {
 				<div
 					className={`${
 						toggle ? 'fixed' : 'hidden'
-					}  flex inset-0 transition-all bg-white/70 backdrop-blur-xl z-20 md:static md:bg-transparent md:flex items-center justify-center space-y-8 md:space-y-0 flex-col md:flex-row md:space-x-8  md:mt-0'`}>
+					}  flex inset-0 transition-all bg-white/70 backdrop-blur-xl z-20 md:static md:bg-transparent md:flex items-center justify-center space-y-8 md:space-y-0 flex-col md:flex-row md:space-x-8 md:ml-10 md:mt-0'`}>
 					<ul className='flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 lg:md:-x-8'>
 						{navLinks.map((link, id) => (
 							<li
