@@ -12,6 +12,9 @@ import close from './close.svg';
 import cube from './cube.svg';
 import gearwheel from './gearwheel.svg';
 import search from './gearwheel.svg';
+import plus from './plus.svg';
+import minus from './minus.svg';
+
 export {
 	logo,
 	about,
@@ -24,6 +27,8 @@ export {
 	cube,
 	gearwheel,
 	search,
+	plus,
+	minus,
 };
 
 export const sliderData = [
