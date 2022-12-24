@@ -11,7 +11,7 @@ import menu from './menu.svg';
 import close from './close.svg';
 import cube from './cube.svg';
 import gearwheel from './gearwheel.svg';
-import search from './gearwheel.svg';
+import search from './search.svg';
 import plus from './plus.svg';
 import minus from './minus.svg';
 

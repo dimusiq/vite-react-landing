@@ -15,21 +15,14 @@ const Header = () => {
 					onClick={() => setToggle((prev) => !prev)}>
 					{toggle ? (
 						<img
-							src={search}
+							src={close}
 							className='h-5 w-5 transform transition duration-500 ease-in-out'
 						/>
 					) : (
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
+						<img
+							src={menu}
 							className='h-5 w-5 transform transition duration-500 ease-in-out'
-							viewBox='0 0 20 20'
-							fillRule='currentColor'>
-							<path
-								fillRule='evenodd'
-								d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-								clipRule='evenodd'
-							/>
-						</svg>
+						/>
 					)}
 				</button>
 				<div>

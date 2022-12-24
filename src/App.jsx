@@ -1,6 +1,7 @@
 import styles from './styles';
 
 import { Header, Navbar, About, Hero, Tabs, Faq, Search } from './components';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<About />
 				<Tabs />
 				<Faq />
+				<Footer />
 			</div>
 		</div>
 	);
