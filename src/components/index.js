@@ -7,5 +7,17 @@ import Faq from './Faq';
 import Button from './Button';
 import Search from './Search';
 import Slider from './Slider';
+import Input from './Input';
 
-export { Header, Navbar, About, Hero, Tabs, Faq, Button, Search, Slider };
+export {
+	Header,
+	Navbar,
+	About,
+	Hero,
+	Tabs,
+	Faq,
+	Button,
+	Search,
+	Slider,
+	Input,
+};
