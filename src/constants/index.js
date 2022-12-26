@@ -117,3 +117,34 @@ export const faqs = [
 		а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.`,
 	},
 ];
+
+export const footerLinks = [
+	{
+		id: 'about',
+		title: 'О нас',
+	},
+	{
+		id: 'projects',
+		title: 'Проекты',
+	},
+	{
+		id: 'testimonials',
+		title: 'Отзывы',
+	},
+	{
+		id: 'oferts',
+		title: 'Договор оферты',
+	},
+	{
+		id: 'agreement',
+		title: 'Договор подряда',
+	},
+	{
+		id: 'confedentitional',
+		title: 'Конфиденциальность',
+	},
+	{
+		id: 'partnership',
+		title: 'Партнёрское соглашение',
+	},
+];
