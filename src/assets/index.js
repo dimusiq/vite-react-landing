@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import logo2 from './logo2.svg';
+
 import about from './about.png';
 import hero from './hero.png';
 import hero2 from './hero2.png';
@@ -14,9 +16,11 @@ import gearwheel from './gearwheel.svg';
 import search from './search.svg';
 import plus from './plus.svg';
 import minus from './minus.svg';
-
+import vk from './vk.svg';
+import odnoklassniki from './odnoklassniki.svg';
 export {
 	logo,
+	logo2,
 	about,
 	how,
 	how2,
@@ -29,6 +33,8 @@ export {
 	search,
 	plus,
 	minus,
+	vk,
+	odnoklassniki,
 };
 
 export const sliderData = [
