@@ -5,9 +5,9 @@ import Button from './Button';
 
 const About = () => {
 	return (
-		<section className=' mb-10 px-[50px] md:px-[75px]'>
-			<div className='bg-white border-2  grid overflow-hidden md auto-cols-auto grid-rows-3 gap-6 grid-flow-row w-auto h-auto'>
-				<div className='bg-white row-start-1 row-end-1 col-start-1 col-end-4'>
+		<section className=' border-2 mb-10 px-[50px] md:px-[75px]'>
+			<div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 '>
+				<div className='  md:col-span-2'>
 					<h1 className='text-[48px] leading-8'>О нас</h1>
 					<p className={`${styles.paragraph} mt-[20px]`}>
 						Также как перспективное планирование создаёт
@@ -29,14 +29,11 @@ const About = () => {
 						качества экспериментов.
 					</p>
 				</div>
-				<div
-					className=' relative bg-white row-start-2 row-end-2 md:row-end-4 col-start-1 col-end-1 mt-[60px]  md:mt-0 md:col-start-1 
-				 md:col-end-3'
-				>
+				<div className='relative rounded-lg shadow-xl  md:row-span-2'>
 					<img
 						src={about}
 						alt='about'
-						className='w-full h-full z-0 object-cover'
+						className='w-full h-full z-0 object-cover rounded-3xl '
 					/>
 					<div className='absolute bottom-0 w-full h-[30%] z-10 text-[16px] backdrop-opacity-10 backdrop-invert bg-black/30 rounded-3xl object-cover flex justify-between items-center'>
 						<div className='flex px-[50px]'>
@@ -53,17 +50,17 @@ const About = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex bg-white row-start-2 row-end-2 col-start-3 col-end-3 border-2 rounded-2xl items-center '>
-					<div className='flex flex-1 justify-between'>
-						<div className='relative w-[120px] h-[120px] btn-orange rounded-full ml-[40px]  object-cover'>
+				<div className='border-2 rounded-2xl'>
+					<div className='flex flex-1 justify-between items-center md:py-[65px] md:px-[60px]'>
+						<div className='relative w-[120px] h-[120px] btn-orange rounded-full object-cover mr-[50px]'>
 							<img
 								src={cube}
 								alt='cube'
 								className='absolute bottom-8 left-8 w-full h-full'
 							/>
 						</div>
-						<div className='flex flex-1 flex-col justify-between '>
-							<h1 className='font-bold'>
+						<div className='flex flex-1 flex-col justify-between items-center '>
+							<h1 className='font-bold '>
 								Консультация с широким активом
 							</h1>
 							<p className={`${styles.paragraph}`}>
@@ -75,16 +72,16 @@ const About = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex h-full bg-white row-start-3 row-end-3 col-start-3 col-end-3 border-2 rounded-2xl items-center '>
-					<div className=' flex flex-1 justify-between'>
-						<div className='relative w-[120px] h-[120px] btn-orange rounded-full ml-[40px]  object-cover'>
+				<div className=' border-2 rounded-2xl  '>
+					<div className='flex flex-1 justify-between items-center md:py-[65px] md:px-[60px]'>
+						<div className='relative w-[120px] h-[120px] btn-orange rounded-full  object-cover mr-[50px]'>
 							<img
 								src={gearwheel}
 								alt='gearwheel'
 								className='absolute bottom-8 left-8 w-full h-full'
 							/>
 						</div>
-						<div className='flex flex-1 justify-between items-center '>
+						<div className='flex flex-1 flex-col justify-between items-center '>
 							<h1 className='font-bold'>
 								Консультация с широким активом
 							</h1>

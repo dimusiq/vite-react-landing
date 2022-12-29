@@ -1,11 +1,19 @@
 import styles from './styles';
 
-import { Header, Navbar, About, Hero, Tabs, Faq, Search } from './components';
+import {
+	Header,
+	Navbar,
+	About,
+	Hero,
+	Tabs,
+	Faq,
+	Search,
+} from './components';
 import Footer from './components/Footer';
 
 function App() {
 	return (
-		<div className='w-full overflow-hidden'>
+		<div className='w-full overflow-hidden mx-auto'>
 			<div className={`${styles.boxWidth}`}>
 				<Header />
 			</div>
