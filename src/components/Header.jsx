@@ -27,7 +27,9 @@ const Header = () => {
 					)}
 				</button>
 				<div>
-					<img src={logo} alt='logo' />
+					<a href='/'>
+						<img src={logo} alt='logo' />
+					</a>
 				</div>
 				<div
 					className={`${

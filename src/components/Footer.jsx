@@ -9,7 +9,9 @@ const Footer = () => {
 		<footer className='bg-black text-white w-full flex flex-row justify-between px-[50px] md:px-[75px] py-[50px]'>
 			<nav className='flex flex-col justify-between'>
 				<div>
-					<img src={logo2} alt='logo' />
+					<a href='/'>
+						<img src={logo2} alt='logo2' />
+					</a>
 				</div>
 				<ul className='flex flex-col justify-between'>
 					{footerLinks.map((link, i) => (
@@ -39,6 +41,7 @@ const Footer = () => {
 					<Input />
 					<div className='flex flex-1 justify-between items-center text-gray-300 mt-[32px]'>
 						<Button
+							type='submit'
 							className={`${styles.buttonStyles} btn-orange px-[35px]`}
 						>
 							Отправить данные
