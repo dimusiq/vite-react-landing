@@ -1,4 +1,4 @@
-import { Button, Input } from '../components';
+import { Button, Input, InputForm } from '../components';
 import React from 'react';
 import { footerLinks } from '../constants';
 import { logo2, vk, odnoklassniki } from '../assets';
@@ -37,8 +37,8 @@ const Footer = () => {
 				</div>
 			</nav>
 			<div className='flex justify-between items-center  mx-auto   '>
-				<div className='text-gray-300 mx-5'>
-					<Input />
+				<div className='text-gray-300 mx-5 '>
+					<InputForm />
 					<div className='flex flex-1 justify-between items-center text-gray-300 mt-[32px]'>
 						<Button
 							type='submit'

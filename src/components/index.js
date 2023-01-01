@@ -8,6 +8,7 @@ import Button from './Button';
 import Search from './Search';
 import Slider from './Slider';
 import Input from './Input';
+import InputForm from './InputForm';
 
 export {
 	Header,
@@ -20,4 +21,5 @@ export {
 	Search,
 	Slider,
 	Input,
+	InputForm,
 };
