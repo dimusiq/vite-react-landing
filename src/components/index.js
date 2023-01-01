@@ -9,6 +9,8 @@ import Search from './Search';
 import Slider from './Slider';
 import Input from './Input';
 import InputForm from './InputForm';
+import TextArea from './TextArea';
+
 
 export {
 	Header,
@@ -22,4 +24,5 @@ export {
 	Slider,
 	Input,
 	InputForm,
+	TextArea,
 };

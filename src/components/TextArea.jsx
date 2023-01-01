@@ -1,7 +1,6 @@
-import React from 'react';
 import styles from '../styles';
 
-const Input = ({
+const TextArea = ({
 	label,
 	type,
 	value,
@@ -12,16 +11,18 @@ const Input = ({
 		<div className='mt-[25px]'>
 			<label>
 				{label}
-				<input
+				<textarea
 					type={type}
 					value={value}
 					onChange={(e) => onChange(e.target.value)}
 					placeholder={placeholder}
-					className={`${styles.inputStyles} `}
-				></input>
+					className={`${styles.inputStyles}`}
+					cols='20'
+					rows='10'
+				></textarea>
 			</label>
 		</div>
 	);
 };
 
-export default Input;
+export default TextArea;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { TextArea } from '.';
 import { useFieldChange } from '../hooks/useFiledChange';
-import styles from '../styles';
 import Input from './Input';
 
 const InputForm = ({ onSubmit }) => {
@@ -17,7 +17,7 @@ const InputForm = ({ onSubmit }) => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit}>
+		<form  onSubmit={handleSubmit}>
 			<Input
 				placeholder='Фамилия, имя и отчество*'
 				value={formData.name}
@@ -30,14 +30,12 @@ const InputForm = ({ onSubmit }) => {
 				type='email'
 				onChange={handleChange('email')}
 			/>
-			<Input
-				multiline
-				numberOfLines={4}
+
+			<TextArea
 				placeholder='Сообщение'
 				value={formData.textarea}
 				type='textarea'
 				onChange={handleChange('textarea')}
-				className={`${styles.inputStyles} `}
 			/>
 		</form>
 	);

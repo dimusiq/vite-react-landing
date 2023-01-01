@@ -37,9 +37,12 @@ const Footer = () => {
 				</div>
 			</nav>
 			<div className='flex justify-between items-center  mx-auto   '>
-				<div className='text-gray-300 mx-5 '>
-					<InputForm />
-					<div className='flex flex-1 justify-between items-center text-gray-300 mt-[32px]'>
+				<div className='mx-5 '>
+					<h1 className='text-[48px] text-gray-300 font-normal leading-[59px]'>
+						Оставить заявку
+					</h1>
+					<InputForm/>
+					<div className='flex flex-1 justify-between items-center  mt-[32px]'>
 						<Button
 							type='submit'
 							className={`${styles.buttonStyles} btn-orange px-[35px]`}
