@@ -36,13 +36,13 @@ const Footer = () => {
 					</a>
 				</div>
 			</nav>
-			<div className='flex justify-between items-center  mx-auto   '>
-				<div className='mx-5 '>
+			<div className='flex justify-between items-center'>
+				<div className=''>
 					<h1 className='text-[48px] text-gray-300 font-normal leading-[59px]'>
 						Оставить заявку
 					</h1>
-					<InputForm/>
-					<div className='flex flex-1 justify-between items-center  mt-[32px]'>
+					<InputForm />
+					<div className='flex justify-between items-center  mt-[32px]'>
 						<Button
 							type='submit'
 							className={`${styles.buttonStyles} btn-orange px-[35px]`}
@@ -58,7 +58,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className='hidden md:flex md:w-[363px] md:leading-8 md:text-gray-300 align-bottom '>
+			<div className='hidden md:mt-[50px]  md:flex md:w-[363px] md:leading-8 md:text-gray-300  '>
 				<p className={`${styles.paragraph}`}>
 					Высокий уровень вовлечения представителей целевой
 					аудитории является чётким доказательством простого

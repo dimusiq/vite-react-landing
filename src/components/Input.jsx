@@ -7,9 +7,10 @@ const Input = ({
 	value,
 	onChange,
 	placeholder,
+	className,
 }) => {
 	return (
-		<div className='mt-[25px]'>
+		<div >
 			<label>
 				{label}
 				<input
@@ -17,7 +18,7 @@ const Input = ({
 					value={value}
 					onChange={(e) => onChange(e.target.value)}
 					placeholder={placeholder}
-					className={`${styles.inputStyles} `}
+					className={className}
 				></input>
 			</label>
 		</div>

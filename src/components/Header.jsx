@@ -9,9 +9,9 @@ const Header = () => {
 
 	return (
 		<header className='w-full text-gray-900 mt-1'>
-			<nav className='flex justify-between items-center py-2 px-6 mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-24 border-b rounded-3xl shadow-md'>
+			<nav className='flex justify-between items-center py-2 px-6 mx-auto max-w-screen-xl md:px-10 lg:px-10 xl:px-12 border-b rounded-3xl shadow-xl'>
 				<button
-					className='block md:hidden relative z-30 focus:outline-none transform  -translate-x-1/2 -translate-y-1/2 active:scale-75 transition-transform'
+					className='block md:hidden relative z-30 focus:outline-none transform -translate-x-1/2 -translate-y-1/2 active:scale-75 transition-transform'
 					onClick={() => setToggle((prev) => !prev)}
 				>
 					{toggle ? (

@@ -6,6 +6,7 @@ const TextArea = ({
 	value,
 	onChange,
 	placeholder,
+	className
 }) => {
 	return (
 		<div className='mt-[25px]'>
@@ -16,9 +17,9 @@ const TextArea = ({
 					value={value}
 					onChange={(e) => onChange(e.target.value)}
 					placeholder={placeholder}
-					className={`${styles.inputStyles}`}
-					cols='20'
-					rows='10'
+					className={className}
+					cols='10'
+					rows='5'
 				></textarea>
 			</label>
 		</div>
