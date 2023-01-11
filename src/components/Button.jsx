@@ -1,10 +1,7 @@
-import React from 'react';
-import styles from '../styles';
-
-const Button = ({ className, onClick, children }) => {
+const Button = ({ className, onClick, children, type }) => {
 	return (
 		<button
-			type='button'
+			type={type}
 			className={className}
 			onClick={onClick}
 		>

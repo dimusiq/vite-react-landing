@@ -42,20 +42,6 @@ const Footer = () => {
 						Оставить заявку
 					</h1>
 					<InputForm />
-					<div className='flex justify-between items-center  mt-[32px]'>
-						<Button
-							type='submit'
-							className={`${styles.buttonStyles} btn-orange px-[35px]`}
-						>
-							Отправить данные
-						</Button>
-						<div className='flex ml-5 '>
-							<input type='checkbox' className=''></input>
-							<span className=' px-1 text-gray-300'>
-								Согласен на обработку данных
-							</span>
-						</div>
-					</div>
 				</div>
 			</div>
 			<div className='hidden md:mt-[50px]  md:flex md:w-[363px] md:leading-8 md:text-gray-300  '>

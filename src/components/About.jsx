@@ -43,7 +43,7 @@ const About = () => {
 								подготовке и реализации новых принципов
 							</p>
 							<Button
-								className={`${styles.buttonStyles} border-yellow-600 backdrop-opacity-10 backdrop-invert bg-black/20 border-[3px]`}
+								className={`${styles.buttonStyles} border-orange-400 backdrop-opacity-10 backdrop-invert bg-black/20 border-2`}
 							>
 								Подробнее
 							</Button>
