@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { TextArea } from '.';
-import { useFieldChange } from '../hooks/useFiledChange';
 import Button from './Button';
 import styles from '../styles';
 

@@ -1,5 +1,6 @@
 const Button = ({
 	className,
+	onSubmit,
 	onClick,
 	children,
 	type,
