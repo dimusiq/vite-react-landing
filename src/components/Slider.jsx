@@ -28,7 +28,8 @@ const Slider = () => {
 
 	return (
 		<div
-			className={`${styles.sectionWidth} relative w-full md:h-full overflow-hidden `}>    
+			className={`${styles.sectionWidth} relative w-full md:h-full overflow-hidden `}
+		>
 			{sliderData.map((data, index) => {
 				return (
 					<div
@@ -37,7 +38,8 @@ const Slider = () => {
 							slideIndex === index + 1
 								? 'opacity-1'
 								: 'md:h-full absolute opacity-0 transition-opacity ease-in-out'
-						} object-cover `}>
+						} object-cover `}
+					>
 						<img
 							src={data.image}
 							alt={data.title}
@@ -55,7 +57,8 @@ const Slider = () => {
 							slideIndex === index + 1
 								? 'w-[15px] h-[15px] mr-[20px] rounded-full  bg-white cursor-pointer '
 								: 'w-[15px] h-[15px] mr-[20px] rounded-full  bg-gray-400 cursor-pointer'
-						} `}></div>
+						} `}
+					></div>
 				))}
 			</div>
 		</div>
