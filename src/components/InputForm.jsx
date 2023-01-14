@@ -1,48 +1,63 @@
 import { useState } from 'react';
 import { TextArea } from '.';
 import { useFieldChange } from '../hooks/useFiledChange';
-import Input from './Input';
 import Button from './Button';
 import styles from '../styles';
 
 const InputForm = ({ onSubmit }) => {
-	const [formData, setFormData] = useState({
-		name: '',
-		email: '',
-		textarea: '',
-	});
-	const handleChange = useFieldChange(setFormData);
+	const [inputName, setInputName] = useState('');
+	const [inputEmail, setInputEmail] = useState('');
+	const [inputMessage, setInputMessage] = useState('');
 
-	const handleSubmit = (e) => {
+	const nameChangeHandler = (e) => {
+		setInputName(e.target.value);
+	};
+	const emailChangeHandler = (e) => {
+		setInputEmail(e.target.value);
+	};
+
+	const messageChangeHandler = (e) => {
+		setInputMessage(e.target.value);
+	};
+
+	const submitHandler = (e) => {
 		e.preventDefault();
-		onSubmit(formData);
-		setFormData('');
+		const formData = {
+			name: inputName,
+			email: inputEmail,
+			message: inputMessage,
+		};
+		setInputName('');
+		setInputMessage('');
+		setInputEmail('');
 	};
 
 	return (
-		<form onSubmit={handleSubmit}>
-			<Input
+		<form onSubmit={submitHandler}>
+			<input
 				placeholder='Фамилия, имя и отчество*'
-				value={formData.name}
+				value={inputName}
 				type='text'
-				onChange={handleChange('name')}
+				onChange={nameChangeHandler}
 				className={`${styles.inputStyles} mt-[25px]`}
-			/>
-			<Input
+			></input>
+			<input
 				placeholder='Email*'
-				value={formData.email}
+				value={inputEmail}
 				type='email'
-				onChange={handleChange('email')}
+				onChange={emailChangeHandler}
 				className={`${styles.inputStyles} mt-[25px] `}
-			/>
+			></input>
 
-			<TextArea
+			<textarea
 				placeholder='Сообщение'
-				value={formData.textarea}
+				value={inputMessage}
 				type='textarea'
-				onChange={handleChange('textarea')}
-				className={`${styles.inputStyles} `}
-			/>
+				onChange={messageChangeHandler}
+				className={`${styles.inputStyles} mt-[25px]`}
+				cols='10'
+				rows='5'
+			></textarea>
 			<div className='flex justify-between items-center mt-[32px]'>
 				<Button
 					type='submit'
